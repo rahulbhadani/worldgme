@@ -289,7 +289,7 @@ define([
                 "        call([\"pkill\", \"ros\"])\n" +
                 "        call([\"pkill\", \"roscore\"])\n" +
                 "        call([\"pkill\", \"rosout\"])\n" +
-                "        call([\"pkill\", \"rosmaster\"])" +
+                "        call([\"pkill\", \"rosmaster\"])\n" +
                 "        call([\"pkill\", \"gzserver\"])\n" +
                 "        call([\"pkill\", \"gzclient\"])\n" +
                 "        time.sleep(2)\n" +
