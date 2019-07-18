@@ -1,0 +1,21 @@
+{
+  "components": {
+    "plugins": {
+      "ModelicaCodeGenerator": {
+        "src": "src/plugins/ModelicaCodeGenerator",
+        "test": "test/plugins/ModelicaCodeGenerator"
+      },
+      "ModelicaCodeGenerator2": {
+        "src": "src/plugins/ModelicaCodeGenerator2",
+        "test": "test/plugins/ModelicaCodeGenerator2"
+      },
+      "WorldMaker": {
+        "src": "src/plugins/WorldMaker",
+        "test": "test/plugins/WorldMaker"
+      }
+    }
+  },
+  "dependencies": {
+    "plugins": {}
+  }
+}
