@@ -287,6 +287,9 @@ define([
                 "class catlaunch:\n" +
                 "    def __init__(self):\n" +
                 "        call([\"pkill\", \"ros\"])\n" +
+                "        call([\"pkill\", \"roscore\"])\n" +
+                "        call([\"pkill\", \"rosout\"])\n" +
+                "        call([\"pkill\", \"rosmaster\"])" +
                 "        call([\"pkill\", \"gzserver\"])\n" +
                 "        call([\"pkill\", \"gzclient\"])\n" +
                 "        time.sleep(2)\n" +
@@ -363,7 +366,7 @@ define([
                 scriptFile += "    cl.spawn(\"/home/reu-cat/catvehicle_ws/src/catvehicle/launch/" +
                     modelJson.worldNames[i] + ".launch\")\n" +
                     "\n" +
-                    "    time.sleep(30)\n" +
+                    "    time.sleep(50)\n" +
                     "\n" +
                     "    cl.close_program()\n" +
                     "\n" +
